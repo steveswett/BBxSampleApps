@@ -1,0 +1,5 @@
+rem  an empty Business BASIC program
+dim a[10,3]
+let x = a[5,0]
+dim b[-5:20,100]
+print b[-3,50]

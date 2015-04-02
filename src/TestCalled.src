@@ -1,0 +1,4 @@
+rem  an empty Business BASIC program
+
+print "called hello"
+print "called world"

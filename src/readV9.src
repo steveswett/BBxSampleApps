@@ -1,0 +1,26 @@
+
+open(1,MODE="O_RDONLY",err=open_error) "V9"
+print "file opened ok"
+goto opened_ok
+
+open_error:
+print "error opening file"
+goto eoj
+
+opened_ok:
+cnt = 0
+print ""
+print pad("CUSTNO", 7), pad("NAME",23), pad("ADDRESS", 23), "CITY, STATE, ZIP" 
+
+read_file:
+read(1,end=done_reading) custno$, name$, *, address$, city_state$
+cnt = cnt + 1
+
+print pad(custno$, 7), pad(name$,23), pad(address$, 23), city_state$ 
+
+if (cnt < 10) goto read_file
+
+done_reading:
+close(1)
+
+eoj:

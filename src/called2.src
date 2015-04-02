@@ -1,0 +1,10 @@
+
+addition:
+ENTER factor1, factor2
+print factor1, " + ", factor2," = ",factor1 + factor2
+END
+
+subtraction:
+ENTER factor1, factor2
+print factor1, " - ", factor2," = ",factor1 - factor2
+END

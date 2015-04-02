@@ -1,0 +1,11 @@
+1 print "Hello World"
+2 let x=5
+3 print x
+4 rem 1000,10
+5 goto 6
+6 print "goodbye"
+2007 rem 0
+2008 print "one"
+2009 print "two"
+2010 print "three"
+2011 print "four"

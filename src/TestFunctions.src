@@ -1,0 +1,38 @@
+def fnPrintStuff%(arg1$)
+print "Inside fnPrintStuff"
+print arg1$
+print "hello"
+print "world"
+
+rem Must return something (if multi-line function)
+
+return 0
+
+fnend
+
+
+rem When calling a function, must return into a variable:
+
+result% = fnPrintStuff%("test")
+
+
+gosub printStuff
+
+call "TestCalled.bbx"
+
+
+goto finished
+
+printStuff:
+print "Inside printStuff sub"
+print arg1$
+print "hello"
+print "world"
+return
+
+finished:
+
+
+
+
+
