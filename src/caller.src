@@ -1,7 +1,14 @@
+print "This is an example of calling a program with no args:"
 let caller_x$ = "value of caller_x"
 call "called1.bbx"
+print ""
 print "----"
+print ""
+print "This is an example of calling a program using targeted entry:"
+print ""
 let arg1 = 5
 let arg2 = 2
+print "Call to do addition:"
 call "called2.bbx::addition",arg1,arg2
+print "Call to do subtraction:"
 call "called2.bbx::subtraction",arg1,arg2
